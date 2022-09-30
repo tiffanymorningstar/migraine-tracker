@@ -21,6 +21,7 @@ import'./config/passport.js'
 // import routes
 import { router as indexRouter } from './routes/index.js'
 import { router as authRouter } from './routes/auth.js'
+import { router as migrainesRouter } from './routes/migraines.js'
 
 // create the express app
 const app = express()
@@ -66,6 +67,10 @@ app.use(passDataToView)
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
 
+// mounted routers
+app.use('/migraines', migrainesRouter)
+
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404))
@@ -85,4 +90,6 @@ app.use(function (err, req, res, next) {
   })
 })
 
-export { app }
+export { 
+  app 
+}
