@@ -5,8 +5,8 @@ import { isLoggedIn } from '../middleware/middleware.js'
 const router = Router()
 
 router.get('/new', isLoggedIn, migrainesCtrl.new)
-
-
+router.get('/', isLoggedIn, migrainesCtrl.index)
+router.post('/',isLoggedIn, migrainesCtrl.create)
 
 export{
   router

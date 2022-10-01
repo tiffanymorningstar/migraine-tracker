@@ -8,6 +8,8 @@ import session from 'express-session'
 import logger from 'morgan'
 import methodOverride from 'method-override'
 import passport from 'passport'
+import('./config/database.js')
+
 
 // import custom middleware
 import { passDataToView } from './middleware/middleware.js'
@@ -69,6 +71,7 @@ app.use('/auth', authRouter)
 
 // mounted routers
 app.use('/migraines', migrainesRouter)
+
 
 
 // catch 404 and forward to error handler
