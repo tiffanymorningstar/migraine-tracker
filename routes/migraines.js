@@ -8,6 +8,8 @@ router.get('/new', isLoggedIn, migrainesCtrl.new)
 router.get('/', isLoggedIn, migrainesCtrl.index)
 router.post('/',isLoggedIn, migrainesCtrl.create)
 
+router.get('/:id', migrainesCtrl.show)
+
 export{
   router
 }
