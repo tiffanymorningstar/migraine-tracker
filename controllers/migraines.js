@@ -31,28 +31,24 @@ function index(req, res) {
       res.redirect('/migraines/')
     })
 
+    }
     function show(req, res) {
       Migraine.findById(req.params.id)
-        .populate('meals')
-        .then(flight => {
-          Meal.find({ _id: { $nin: flight?.meals } })
-            .then(meals => {
-              res.render('flights/show', {
-                title: 'Flight Detail',
-                flight: flight,
-                meals: meals
-              })
-            })
-            .catch(err => {
-              console.log(err)
-              res.redirect("/")
-            })
-        })
-      }
-      }
+      .then(migraine => {
+        res.render('migraines/show', { 
+          title: 'Migraine Detail', 
+          migraine: migraine,
+        })    
+      })
+      .catch(err => {
+        console.log(err)
+        res.redirect("/")
+      })
+    }
 
 export {
   newMigraine as new,
   create,
   index,
+  show
 }
