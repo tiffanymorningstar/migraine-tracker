@@ -23,6 +23,19 @@
         
         <%# start meals list %>
 
+        <div>Triggers:</div>
+        <% if (migraine.triggers.length) { %>
+          <ul>
+            <% migraine.triggers.forEach(trigger=> { %>
+              <li>
+                <%= trigger.name %>
+              </li>
+              <% }) %>
+          </ul>
+          <% } else { %>
+            <h3>No Triggers Yet</h3>
+            <% } %>
+
                 <%# end meals list %>
       </section>
       <%# add to meal form below this comment %>

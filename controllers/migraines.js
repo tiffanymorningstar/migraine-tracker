@@ -34,16 +34,21 @@ function index(req, res) {
     }
     function show(req, res) {
       Migraine.findById(req.params.id)
-      .then(migraine => {
-        res.render('migraines/show', { 
-          title: 'Migraine Detail', 
-          migraine: migraine,
-        })    
-      })
-      .catch(err => {
-        console.log(err)
-        res.redirect("/")
-      })
+        .populate('triggers')
+        .then(migraine => {
+          Migraine.find({ _id: { $nin: migraine?.trigger } })
+            .then(triggers => {
+              res.render('migraines/show', {
+                title: 'Migraine Detail',
+                migraine: migraine,
+                triggers: triggers
+              })
+            })
+            .catch(err => {
+              console.log(err)
+              res.redirect("/")
+            })
+        })
     }
 
 export {
