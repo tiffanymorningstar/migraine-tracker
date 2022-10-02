@@ -7,7 +7,7 @@ const triggerSchema = new Schema({
   name: String
 })
 
-const trigger = mongoose.model('Trigger', triggerSchema)
+const Trigger = mongoose.model('Trigger', triggerSchema)
 
 export {
   Trigger

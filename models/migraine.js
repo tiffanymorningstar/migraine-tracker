@@ -5,7 +5,8 @@ const Schema = mongoose.Schema
 const migraineSchema = new Schema({
   date: Date,
   type: String,
-  owner: {type: Schema.Types.ObjectId, ref: "Profile"}
+  owner: {type: Schema.Types.ObjectId, ref: "Profile"},
+  triggers: [{ type: Schema.Types.ObjectId, ref: 'Trigger' }]
 }, {
   timestamps: true
 })

@@ -40,6 +40,18 @@
       </section>
       <%# add to meal form below this comment %>
       
+      <form id="add-to-triggers" action="/migraines/<%= migraine.id %>/triggers" method="POST">
+        <select name="triggerId">
+          <% triggers.forEach(trigger=> { %>
+            <option value="<%= trigger._id %>">
+              <%= trigger.name %>
+            </option>
+            <% }) %>
+        </select>
+        <button type="submit">Add to Trigger</button>
+      </form>
+      </section>
+
         <% // new markup below %>
           
     </main>
