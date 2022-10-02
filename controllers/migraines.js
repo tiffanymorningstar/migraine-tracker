@@ -1,4 +1,6 @@
 import { Migraine } from '../models/migraine.js'
+import { Trigger } from "../models/trigger.js"
+
 
 function newMigraine(req, res) {
   console.log("test")
