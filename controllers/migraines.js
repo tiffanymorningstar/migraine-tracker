@@ -38,7 +38,7 @@ function show(req, res) {
   Migraine.findById(req.params.id)
     .populate('triggers')
     .then(migraine => {
-      Migraine.find({ _id: { $nin: migraine?.trigger } })
+      Trigger.find({ _id: { $nin: migraine?.triggers } })
         .then(triggers => {
           res.render('migraines/show', {
             title: 'Migraine Detail',
