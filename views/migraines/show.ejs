@@ -30,6 +30,14 @@
             <% migraine.triggers.forEach(trigger=> { %>
               <li>
                 <%= trigger.name %>
+
+                <a href="/migraines/<%= trigger._id %>">DETAILS</a>
+
+                <form action="/triggers/<%= trigger._id %>?_method=DELETE" method="POST">
+                  <button>X</button>
+                </form>
+
+
               </li>
               <% }) %>
           </ul>

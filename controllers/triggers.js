@@ -35,9 +35,21 @@ function deleteTrigger(req, res) {
     })
 }
 
+function update(req, res) {
+  Trigger.findByIdAndUpdate(req.params.id, req.body, { new: true })
+    .then(trigger => {
+      res.redirect('/triggers')
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect("/")
+    })
+}
+
 
 export {
   newTrigger as new,
   create,
-  deleteTrigger as delete
+  deleteTrigger as delete,
+  update,
 }

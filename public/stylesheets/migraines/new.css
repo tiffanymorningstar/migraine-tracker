@@ -43,3 +43,7 @@ main {
 .right {
   margin-left: auto;
 }
+
+/* body > a:visited {
+  color: #ecec62;
+} */

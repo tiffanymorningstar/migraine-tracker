@@ -7,6 +7,7 @@ const router = Router()
 router.get('/new', isLoggedIn, triggersCtrl.new)
 router.post('/', isLoggedIn, triggersCtrl.create)
 router.delete('/:id', isLoggedIn, triggersCtrl.delete)
+router.put('/:id', isLoggedIn, triggersCtrl.update)
 
 export {
   router

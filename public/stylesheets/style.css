@@ -46,3 +46,7 @@ main {
 /* #bolt {
   box-shadow: 0px 0px 5px #fff;
 } */
+
+nav > a:visited {
+  color: #1532a5;
+}
