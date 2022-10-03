@@ -6,6 +6,7 @@
         <%= title %>
       </h1>
       <div>
+
         <%= migraine.title %>
           <a href="/migraines/<%= migraine._id %>/edit">
             <button>Edit Migraine</button>
@@ -32,6 +33,7 @@
               </li>
               <% }) %>
           </ul>
+
           <% } else { %>
             <h3>No Triggers Yet</h3>
             <% } %>
@@ -50,9 +52,11 @@
         </select>
         <button type="submit">Add to Trigger</button>
       </form>
+
+
       </section>
 
         <% // new markup below %>
-          
+
     </main>
     <%- include('../partials/footer') %>

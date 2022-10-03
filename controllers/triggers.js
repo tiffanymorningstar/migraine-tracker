@@ -22,9 +22,22 @@ function newTrigger(req, res) {
       console.log(err)
       res.redirect('/migraines')
     })
+  }
+
+function deleteTrigger(req, res) {
+  Trigger.findByIdAndDelete(req.params.id)
+    .then(() => {
+      res.redirect("/triggers")
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect("/")
+    })
 }
+
 
 export {
   newTrigger as new,
   create,
+  deleteTrigger as delete
 }
