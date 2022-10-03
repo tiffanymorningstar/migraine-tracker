@@ -79,6 +79,17 @@ function show(req, res) {
         })
     }
 
+    function update(req, res) {
+      Migraine.findByIdAndUpdate(req.params.id, req.body, { new: true })
+        .then(migraine => {
+          res.redirect('/migraines')
+        })
+        .catch(err => {
+          console.log(err)
+          res.redirect("/")
+        })
+    }
+
   function addToMigraine(req, res) {
     Migraine.findById(req.params.id)
       .then(migraine => {
@@ -105,4 +116,5 @@ export {
   addToMigraine,
   deleteMigraine as delete,
   edit,
+  update,
 }
