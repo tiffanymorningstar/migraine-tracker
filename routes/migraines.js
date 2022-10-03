@@ -10,6 +10,7 @@ router.post('/',isLoggedIn, migrainesCtrl.create)
 router.post('/:id/triggers', isLoggedIn, migrainesCtrl.addToMigraine)
 
 router.get('/:id', isLoggedIn, migrainesCtrl.show)
+router.delete('/:id', migrainesCtrl.delete)
 
 router.post('/:id/triggers', migrainesCtrl.addToMigraine)
 

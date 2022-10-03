@@ -53,6 +53,18 @@ function show(req, res) {
     })
 
   }
+      
+    function deleteMigraine(req, res) {
+      Migraine.findByIdAndDelete(req.params.id)
+        .then(() => {
+          res.redirect("/migraines")
+        })
+        .catch(err => {
+          console.log(err)
+          res.redirect("/")
+        })
+    }
+
   function addToMigraine(req, res) {
     Migraine.findById(req.params.id)
       .then(migraine => {
@@ -77,4 +89,5 @@ export {
   index,
   show,
   addToMigraine,
+  deleteMigraine as delete,
 }
