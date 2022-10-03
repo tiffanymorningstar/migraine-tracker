@@ -65,6 +65,20 @@ function show(req, res) {
         })
     }
 
+    function edit(req, res) {
+      Migraine.findById(req.params.id)
+        .then(migraine => {
+          res.render("migraines/edit", {
+            migraine, // same as: flight: flight
+            title: "Edit Migraine"
+          })
+        })
+        .catch(err => {
+          console.log(err)
+          res.redirect("/")
+        })
+    }
+
   function addToMigraine(req, res) {
     Migraine.findById(req.params.id)
       .then(migraine => {
@@ -90,4 +104,5 @@ export {
   show,
   addToMigraine,
   deleteMigraine as delete,
+  edit,
 }
