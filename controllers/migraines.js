@@ -1,6 +1,6 @@
 import { Migraine } from '../models/migraine.js'
 import { Trigger } from "../models/trigger.js"
-
+import { Profile } from "../models/profile.js"
 
 function newMigraine(req, res) {
   console.log("test")
@@ -9,28 +9,36 @@ function newMigraine(req, res) {
   })
 }
 
-function index(req, res) {
-  Migraine.find({})
-    .then(migraines => {
-      res.render('migraines/index', {
-        migraines: migraines,
-        title: 'All Migraines'
-      })
-    })
-    .catch(error => { // If there's an error, console.log it and redirect back home!
-      console.log(err)
-      res.redirect('/')
-    })
-}
+// function index(req, res) {
+//   Migraine.find({})
+//     .then(migraines => {
+//       res.render('migraines/index', {
+//         migraines: migraines,
+//         title: 'All Migraines'
+//       })
+//     })
+//     .catch(error => { // If there's an error, console.log it and redirect back home!
+//       console.log(err)
+//       res.redirect('/')
+//     })
+// }
 
 function create(req, res) {
   Migraine.create(req.body)
     .then(migraine => {
-      res.redirect('/migraines/')
+      console.log('migraine', migraine)
+      Profile.findById(req.user.profile._id)
+      .then(profile => {
+        profile.migraines.push(migraine._id)
+        profile.save()
+        .then(() => {
+          res.redirect('/profiles/show')
+        })
+      })
     })
     .catch(err => {
       console.log(err)
-      res.redirect('/migraines/')
+      res.redirect('/profiles/show')
     })
 
 }
@@ -111,7 +119,7 @@ function show(req, res) {
 export {
   newMigraine as new,
   create,
-  index,
+  // index,
   show,
   addToMigraine,
   deleteMigraine as delete,

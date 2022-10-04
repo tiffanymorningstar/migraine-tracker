@@ -6,7 +6,7 @@ const router = Router()
 
 
 // SHOW -> show an individual goal 
-router.get('/', isLoggedIn, profilesCtrl.show)
+router.get('/show', isLoggedIn, profilesCtrl.show)
 
 
 export { 

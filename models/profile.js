@@ -6,7 +6,6 @@ const profileSchema = new Schema({
   name: String,
   avatar: String,
   migraines:[{ type: Schema.Types.ObjectId, ref: 'Migraine' }],
-  triggers: [{ type: Schema.Types.ObjectId, ref: 'Trigger' }]
 }, {
   timestamps: true
 })

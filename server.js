@@ -25,6 +25,8 @@ import { router as migrainesRouter } from './routes/migraines.js'
 
 import { router as triggersRouter } from './routes/triggers.js'
 
+import { router as profilesRouter } from './routes/profiles.js'
+
 // create the express app
 const app = express()
 
@@ -72,6 +74,7 @@ app.use('/auth', authRouter)
 // mounted routers
 app.use('/migraines', migrainesRouter)
 app.use('/triggers', triggersRouter)
+app.use('/profiles', profilesRouter)
 
 
 // catch 404 and forward to error handler
