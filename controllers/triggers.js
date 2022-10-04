@@ -27,7 +27,7 @@ function newTrigger(req, res) {
 function deleteTrigger(req, res) {
   Trigger.findByIdAndDelete(req.params.id)
     .then(() => {
-      res.redirect("/triggers")
+      res.redirect("/migraines")
     })
     .catch(err => {
       console.log(err)
@@ -38,7 +38,7 @@ function deleteTrigger(req, res) {
 function update(req, res) {
   Trigger.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then(trigger => {
-      res.redirect('/triggers')
+      res.redirect('/migraines')
     })
     .catch(err => {
       console.log(err)
