@@ -1,6 +1,6 @@
 html {
-  box-sizing: border-box;
 
+  box-sizing: border-box;
 }
 
 /* The Universal Selector */
@@ -16,7 +16,6 @@ body {
   background-color: #3051f3;
   color: #f6f6f6;
   /* Use a system font, if none are available use any found sans-sarif font */
-
   font-family: 'Fredoka One', cursive;
 
   /* font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
@@ -25,11 +24,10 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: space-evenly;
-  font-family: 'Fredoka One', cursive;
   background-color: #f6f6f6;
   color: #1a1a1a;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px;
   min-height: 60px;
@@ -46,52 +44,39 @@ main {
   margin-left: auto;
 } */
 
-
-nav > a:visited {
-  color: #1532a5;
+#trigger-name-label {
+  text-align: center;
 }
 
-#add-migraine {
-  font-family: 'Fredoka One', cursive;
+#name-input {
+  display: block;
+  text-align: center;
   padding: 10px;
-  color:rgb(0, 170, 255);
-  background-color: #3051f3;
-  border-radius: 24px;
-  width: 125px;
+  border-radius: 20px;
+  width: 225px;
 }
 
-#add-trigger {
-  font-family: 'Fredoka One', cursive;
+#name-submit {
+  border-radius: 24px;
+  width: 75px;
   padding: 10px;
-  color: rgb(0, 170, 255);
-  background-color: #3051f3;
-  border-radius: 24px;
-  width: 125px;
+  font-family: 'Fredoka One', cursive;
 }
 
-#all-migraines {
-  font-family: 'Fredoka One', cursive;
-  padding: 10px;
-  color: rgb(0, 170, 255);
-  background-color: #3051f3;
+#dropdown {
+  display: block;
   border-radius: 24px;
-  width: 145px;
-}
-
-#logout {
+  width: 75px;
   font-family: 'Fredoka One', cursive;
-  padding: 10px;
-  color: rgb(0, 170, 255);
-  background-color: #3051f3;
-  border-radius: 24px;
-  width: 100px;
-}
-
-#migraine-delete {
-  font-family: 'Fredoka One', cursive;
-  padding: 7px;
-  color: #3051f3;
   background-color: rgb(0, 170, 255);
-  border-radius: 60%;
-  box-shadow: 0;
+  color: #3051f3;
+  padding: 10px;
 }
+
+#name-submit {
+  background-color: rgb(0, 170, 255);
+  color: #3051f3;
+}
+
+
+
