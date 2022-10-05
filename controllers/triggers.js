@@ -1,4 +1,6 @@
 import { Trigger } from "../models/trigger.js"
+import { Profile } from "../models/profile.js"
+
 
 function create(req, res) {
   Trigger.create(req.body)
@@ -24,21 +26,11 @@ function newTrigger(req, res) {
     })
   }
 
-function deleteTrigger(req, res) {
-  Trigger.findByIdAndDelete(req.params.id)
-    .then(() => {
-      res.redirect("/migraines")
-    })
-    .catch(err => {
-      console.log(err)
-      res.redirect("/")
-    })
-}
 
 function update(req, res) {
   Trigger.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then(trigger => {
-      res.redirect('/migraines')
+      res.redirect('/profiles')
     })
     .catch(err => {
       console.log(err)
@@ -50,6 +42,5 @@ function update(req, res) {
 export {
   newTrigger as new,
   create,
-  deleteTrigger as delete,
   update,
 }

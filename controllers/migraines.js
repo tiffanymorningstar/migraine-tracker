@@ -65,7 +65,7 @@ function show(req, res) {
     function deleteMigraine(req, res) {
       Migraine.findByIdAndDelete(req.params.id)
         .then(() => {
-          res.redirect("/migraines")
+          res.redirect("/profiles/show")
         })
         .catch(err => {
           console.log(err)
@@ -73,10 +73,28 @@ function show(req, res) {
         })
     }
 
+function updateTrigger(req, res) {
+  Migraine.findById(req.params.migraineId)
+  .then(migraine => {
+    Trigger.findById(req.params.triggerId)
+    .then(trigger => {
+      migraine.triggers.remove(trigger)
+      migraine.save()
+      .then(() => {
+        res.redirect(`/migraines/${req.params.migraineId}`)
+      }) 
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
+}
+
     function edit(req, res) {
       Migraine.findById(req.params.id)
         .then(migraine => {
-          res.render("migraines/edit", {
+          res.render("profiles/edit", {
             migraine, // same as: flight: flight
             title: "Edit Migraine"
           })
@@ -90,7 +108,7 @@ function show(req, res) {
     function update(req, res) {
       Migraine.findByIdAndUpdate(req.params.id, req.body, { new: true })
         .then(migraine => {
-          res.redirect('/migraines')
+          res.redirect('/profiles/show')
         })
         .catch(err => {
           console.log(err)
@@ -125,4 +143,5 @@ export {
   deleteMigraine as delete,
   edit,
   update,
+  updateTrigger,
 }
