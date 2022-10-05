@@ -51,6 +51,7 @@ main {
 #enter-migraine {
   display: block;
   text-align: center;
+  padding: 10px;
 }
 
 #migraine-input {
