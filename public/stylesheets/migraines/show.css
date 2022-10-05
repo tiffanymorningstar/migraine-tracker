@@ -39,6 +39,10 @@ main {
   flex-direction: column;
 }
 
-.right {
+/* .right {
   margin-left: auto;
+} */
+
+#date {
+  padding: 5px;
 }

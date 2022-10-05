@@ -15,8 +15,13 @@
             <%# Write the line of EJS to iterate over movies using forEach %>
               <% profile.migraines.forEach(migraine=> { %>
                 <tr>
-                  <td>
-                    <%= migraine.date %>
+            
+                  <td id="date">
+                    <%=migraine.date.getMonth() +1 %>
+                    /
+                    <%=migraine.date.getDate() %>
+                    /    
+                    <%=migraine.date.getFullYear() %>
                   </td>
                   <td>
                     <%= migraine.type %>

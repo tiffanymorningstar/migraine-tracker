@@ -26,7 +26,7 @@ function newMigraine(req, res) {
 function create(req, res) {
   Migraine.create(req.body)
     .then(migraine => {
-      console.log('migraine', migraine)
+      console.log('migraine', migraine.date)
       Profile.findById(req.user.profile._id)
       .then(profile => {
         profile.migraines.push(migraine._id)

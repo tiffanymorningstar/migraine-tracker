@@ -81,8 +81,9 @@ main {
   justify-content: center;
   padding: 10px;
   border-radius: 24px;
-  width: 75px;
+  width: 100px;
   font-family: 'Fredoka One', cursive;
   background-color: rgb(0, 170, 255);
   color: #3051f3;
+  margin: auto;
 }
