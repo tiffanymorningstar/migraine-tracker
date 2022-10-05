@@ -54,6 +54,8 @@ main {
   padding: 10px;
   border-radius: 20px;
   width: 175px;
+  border: none;
+
 }
 
 #name-submit {
@@ -61,6 +63,8 @@ main {
   width: 75px;
   padding: 10px;
   font-family: 'Fredoka One', cursive;
+  border: none;
+
 }
 
 #dropdown {
@@ -73,6 +77,8 @@ main {
   padding: 10px;
   /* align-items: center; */
   margin: auto;
+  border: none;
+
 }
 
 
