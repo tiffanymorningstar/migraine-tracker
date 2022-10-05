@@ -47,3 +47,17 @@ main {
 /* body > a:visited {
   color: #ecec62;
 } */
+
+#enter-migraine {
+  display: block;
+  text-align: center;
+}
+
+#migraine-input {
+  display: block;
+  justify-content: center;
+}
+#date-label {
+  display: block;
+  text-align: center;
+}
