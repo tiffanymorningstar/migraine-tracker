@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-
 }
 
 /* The Universal Selector */
@@ -13,14 +12,9 @@ html {
 }
 
 body {
-  background-color: #3051f3;
-  color: #f6f6f6;
-  /* Use a system font, if none are available use any found sans-sarif font */
-
+  background-color: #4D8B31;
+  color: #FFC800;
   font-family: 'Fredoka One', cursive;
-
-  /* font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
-    'Helvetica Neue', sans-serif; */
   margin: 0;
 }
 
@@ -42,11 +36,6 @@ main {
   flex-direction: column;
 }
 
-/* .right {
-  margin-left: auto;
-} */
-
-
 nav > a:visited {
   color: #1532a5;
 }
@@ -54,8 +43,8 @@ nav > a:visited {
 #add-migraine {
   font-family: 'Fredoka One', cursive;
   padding: 10px;
-  color:rgb(0, 170, 255);
-  background-color: #3051f3;
+  color:#FFFFFF;
+  background-color: #FF8427;
   border-radius: 24px;
   width: 125px;
   border: none;
@@ -65,43 +54,39 @@ nav > a:visited {
 #add-trigger {
   font-family: 'Fredoka One', cursive;
   padding: 10px;
-  color: rgb(0, 170, 255);
-  background-color: #3051f3;
+  color:#FFFFFF;
+  background-color: #FF8427;
   border-radius: 24px;
   width: 125px;
   border: none;
-
 }
 
 #all-migraines {
   font-family: 'Fredoka One', cursive;
   padding: 10px;
-  color: rgb(0, 170, 255);
-  background-color: #3051f3;
+  color:#FFFFFF;
+  background-color: #FF8427;
   border-radius: 24px;
   width: 145px;
   border: none;
-
 }
 
 #logout {
   font-family: 'Fredoka One', cursive;
   padding: 10px;
-  color: rgb(0, 170, 255);
-  background-color: #3051f3;
+  color:#FFFFFF;
+  background-color: #FF8427;
   border-radius: 24px;
   width: 100px;
   border: none;
-
 }
 
 #migraine-delete {
   font-family: 'Fredoka One', cursive;
   padding: 7px;
-  color: #3051f3;
-  background-color: rgb(0, 170, 255);
+  background-color: #FF8427;
+  color: white;
   border-radius: 60%;
   box-shadow: 0;
   border: none;
-
 }

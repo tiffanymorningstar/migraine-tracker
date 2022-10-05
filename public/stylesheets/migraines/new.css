@@ -1,5 +1,4 @@
 html {
-
   box-sizing: border-box;
 }
 
@@ -13,13 +12,9 @@ html {
 }
 
 body {
-  background-color: #3051f3;
-  color: #f6f6f6;
-  /* Use a system font, if none are available use any found sans-sarif font */
+  background-color: #4D8B31;
+  color: #FFC800;
   font-family: 'Fredoka One', cursive;
-
-  /* font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
-    'Helvetica Neue', sans-serif; */
   margin: 0;
 }
 
@@ -39,14 +34,6 @@ main {
   flex-direction: column;
 }
 
-/* .right {
-  margin-left: auto;
-} */
-
-/* body > a:visited {
-  color: #ecec62;
-} */
-
 #enter-migraine {
   display: block;
   text-align: center;
@@ -60,7 +47,6 @@ main {
   border-radius: 20px;
   width: 225px;
   border: none;
-
 }
 #date-label {
   display: block;
@@ -74,8 +60,6 @@ main {
   border-radius: 20px;
   width: 225px;
   border: none;
-
-
 }
 
 #submit-button {
@@ -85,8 +69,8 @@ main {
   border-radius: 24px;
   width: 100px;
   font-family: 'Fredoka One', cursive;
-  background-color: rgb(0, 170, 255);
-  color: #3051f3;
+  background-color: #FF8427;
+  color: white;
   margin: auto;
   border: none;
 }
