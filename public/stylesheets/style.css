@@ -25,6 +25,7 @@ body {
 }
 
 nav {
+  font-family: 'Fredoka One', cursive;
   background-color: #f6f6f6;
   color: #1a1a1a;
   display: flex;
@@ -49,4 +50,28 @@ main {
 
 nav > a:visited {
   color: #1532a5;
+}
+
+#add-migraine {
+  font-family: 'Fredoka One', cursive;
+  padding: 10px;
+  color: white;
+  background-color: #3051f3;
+  border-radius: 24px;
+}
+
+#add-trigger {
+  font-family: 'Fredoka One', cursive;
+  padding: 10px;
+  color: white;
+  background-color: #3051f3;
+  border-radius: 24px;
+}
+
+#all-migraines {
+  font-family: 'Fredoka One', cursive;
+  padding: 10px;
+  color: white;
+  background-color: #3051f3;
+  border-radius: 24px;
 }
