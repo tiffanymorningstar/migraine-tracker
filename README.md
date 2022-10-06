@@ -43,6 +43,7 @@ https://trello.com/b/5IjNm0K9/migraine-tracker
 * Node
 * Express
 * MongoDB
+* Google OAuth
 
 ***
 
@@ -60,6 +61,5 @@ https://trello.com/b/5IjNm0K9/migraine-tracker
 * Fredoka One font is from Google.fonts: https://fonts.google.com/about
 * Brain image is from CLEANPNG:
 https://www.cleanpng.com/png-logo-clip-art-brain-vector-graphics-the-idea-monk-5986103/download-png.html
-* Login
-* Template
+
 
