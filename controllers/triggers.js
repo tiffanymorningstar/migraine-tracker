@@ -1,6 +1,4 @@
 import { Trigger } from "../models/trigger.js"
-import { Profile } from "../models/profile.js"
-
 
 function create(req, res) {
   Trigger.create(req.body)
@@ -26,7 +24,6 @@ function newTrigger(req, res) {
     })
   }
 
-
 function update(req, res) {
   Trigger.findByIdAndUpdate(req.params.id, req.body, { new: true })
     .then(trigger => {
@@ -37,7 +34,6 @@ function update(req, res) {
       res.redirect("/")
     })
 }
-
 
 export {
   newTrigger as new,

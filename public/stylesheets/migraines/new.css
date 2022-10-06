@@ -47,6 +47,7 @@ main {
   border-radius: 20px;
   width: 225px;
   border: none;
+  margin: 10px;
 }
 #date-label {
   display: block;
@@ -60,6 +61,7 @@ main {
   border-radius: 20px;
   width: 225px;
   border: none;
+  margin: 12px;
 }
 
 #submit-button {

@@ -7,19 +7,11 @@
       <%= title %>
     </h1>
     <form id="new-form" action="/migraines" method="POST">
-    
       <label id="enter-migraine" for="migraine-input">Enter a Migraine Type:</label>
       <input id="migraine-input" type="text" name="type" id="migraine-input">
-
       <label id="date-label" for="date-input">Date of Migraine:</label>
         <input id="date-input" type="date" name="date">
-
-
-
-      <!-- <label for="departs-input">Departs:</label> -->
-      <!-- <input type="datetime-local" name="departs"> -->
       <button id="submit-button" type="submit">Submit:</button>
     </form>
   </main>
-
   <%- include("../partials/footer") %>

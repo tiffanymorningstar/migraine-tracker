@@ -6,7 +6,6 @@
         <%= title %>
       </h1>
       <div>
-
         <%= migraine.title %>
           <a href="/migraines/<%= migraine._id %>/edit">
             <button>Edit Migraine</button>
@@ -21,33 +20,25 @@
         <div>
           <%= migraine.type %>
         </div>
-        
         <%# start meals list %>
-
         <div>Triggers:</div>
         <% if (migraine.triggers.length) { %>
           <ul>
             <% migraine.triggers.forEach(trigger=> { %>
               <li>
                 <%= trigger.name %>
-
                 <form action="/migraines/<%= migraine._id %>/triggers/<%= trigger._id %>?_method=PUT" method="POST">
                   <button>X</button>
                 </form>
-
-
               </li>
               <% }) %>
           </ul>
-
           <% } else { %>
             <h3>No Triggers Yet</h3>
             <% } %>
-
                 <%# end meals list %>
       </section>
       <%# add to meal form below this comment %>
-      
       <form id="add-to-triggers" action="/migraines/<%= migraine.id %>/triggers" method="POST">
         <select name="triggerId">
           <% triggers.forEach(trigger=> { %>
@@ -58,11 +49,7 @@
         </select>
         <button type="submit">Add to Trigger</button>
       </form>
-
-
       </section>
-
         <% // new markup below %>
-
     </main>
     <%- include('../partials/footer') %>

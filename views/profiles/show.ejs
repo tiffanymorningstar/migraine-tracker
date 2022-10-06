@@ -15,7 +15,6 @@
             <%# Write the line of EJS to iterate over movies using forEach %>
               <% profile.migraines.forEach(migraine=> { %>
                 <tr>
-            
                   <td id="date">
                     <%=migraine.date.getMonth() +1 %>
                     /
@@ -26,7 +25,7 @@
                   <td>
                     <%= migraine.type %>
                   </td>
-                  <td><a href="/migraines/<%= migraine._id %>">DETAILS</a></td>
+                  <td><a id="details" href="/migraines/<%= migraine._id %>">DETAILS</a></td>
                   <td>
                     <form action="/migraines/<%= migraine._id %>?_method=DELETE" method="POST">
                       <button id="migraine-delete">X</button>
@@ -34,9 +33,6 @@
                   </td>
                 </tr>
                 <%# finish the ternary expression to display 'Yes' or 'Nope' %>
-
-
-
                   <% }) %>
                     </tr>
                     <%# Close the forEach using EJS here %>
