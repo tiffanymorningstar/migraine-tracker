@@ -90,11 +90,6 @@ a{
   border: none;
 }
 
-.div-1 {
-display: flex;
-flex-wrap: wrap;
-}
-
 li {
   list-style: none
 }

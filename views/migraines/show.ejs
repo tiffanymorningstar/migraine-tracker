@@ -48,13 +48,11 @@
                 <form action="/migraines/<%= migraine._id %>/triggers/<%= trigger._id %>?_method=PUT" method="POST">
                <td><button id="trigger-delete">X</button></td>
                 </form>
-              
               </li>
               <% }) %>
           </ul>
           <% } else { %>
            <td> <h3>No Triggers Yet</h3></td>
-        
             <% } %>
           </tr>
         </table>
