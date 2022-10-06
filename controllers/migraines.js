@@ -80,7 +80,8 @@ function updateTrigger(req, res) {
     function edit(req, res) {
       Migraine.findById(req.params.id)
         .then(migraine => {
-          res.render("profiles/edit", {
+          console.log(migraine)
+          res.render("migraines/edit", {
             migraine, // same as: flight: flight
             title: "Edit Migraine"
           })
@@ -122,7 +123,6 @@ function updateTrigger(req, res) {
 export {
   newMigraine as new,
   create,
-  // index,
   show,
   addToMigraine,
   deleteMigraine as delete,

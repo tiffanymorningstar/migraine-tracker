@@ -20,13 +20,11 @@ An app that gives you the ability to add migraines and triggers, so that you can
 
 ***
 
-## Migraine Tracker Link:
-[Here](https://migrainetracker.fly.dev/)
+## Migraine Tracker Link: [HERE](https://migrainetracker.fly.dev/)
 
 ***
 
-## Planning Materials:
-[Here](https://trello.com/b/5IjNm0K9/migraine-tracker)
+## Planning Materials: [HERE](https://trello.com/b/5IjNm0K9/migraine-tracker)
 
 ***
 

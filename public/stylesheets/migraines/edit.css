@@ -56,13 +56,13 @@ main {
   padding: 7px;
   background-color: #FF8427;
   color: white;
-  width: 40px;
-  border-radius: 40%;
+  width: 125px;
+  border-radius: 20px;
   box-shadow: 0;
   border: none;
 }
 
-#date-selector {
+#date-selector-edit, #migraine-type-input {
   padding: 10px;
   border-radius: 20px;
   width: 225px;

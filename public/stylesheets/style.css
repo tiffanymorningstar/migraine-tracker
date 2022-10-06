@@ -36,14 +36,6 @@ main {
   flex-direction: column;
 }
 
-html-head > a:visited {
-  color: white;
-}
-
-nav > a:visited {
-  color: white;
-}
-
 #add-migraine {
   font-family: 'Fredoka One', cursive;
   padding: 10px;
@@ -101,6 +93,6 @@ a:link {
 }
 
 a:visited {
-  color: white;
+  color: rgb(7, 63, 17);
 }
 

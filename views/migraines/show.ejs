@@ -1,7 +1,7 @@
 <%- include('../partials/html-head') %>
   <link rel="stylesheet" href="/stylesheets/migraines/show.css" />
   <%- include('../partials/nav') %>
-    <main>
+    <main> 
       <h1>
         <%= title %>
       </h1>
@@ -12,36 +12,52 @@
           </a>
       </div>
       <section>
-        <div>Date: </div>
+        <table>
+        <tr>
+        <td>Date: </td>
         <div>
-          <td id="detail-date">
+          <td>
             <%=migraine.date.getMonth() +1 %>
             /
             <%=migraine.date.getDate() %>
             /    
             <%=migraine.date.getFullYear() %>
           </td>
+        </tr>
+        </table>
+          </div>
         </div>
-        <div>Type: </div>
-        <div>
+        <table>
+          <tr>
+        <td>Type: </td>
+        <td>
           <%= migraine.type %>
-        </div>
+        </td>
+      </tr>
+      </table>
+      </tr>
         <%# start meals list %>
-        <div>Triggers:</div>
+        <table>
+        <tr>
+        <td>Triggers:</td>
         <% if (migraine.triggers.length) { %>
           <ul>
             <% migraine.triggers.forEach(trigger=> { %>
               <li>
-                <%= trigger.name %>
+               <td> <%= trigger.name %> </td>
                 <form action="/migraines/<%= migraine._id %>/triggers/<%= trigger._id %>?_method=PUT" method="POST">
-                  <button id="trigger-delete">X</button>
+               <td><button id="trigger-delete">X</button></td>
                 </form>
+              
               </li>
               <% }) %>
           </ul>
           <% } else { %>
-            <h3>No Triggers Yet</h3>
+           <td> <h3>No Triggers Yet</h3></td>
+        
             <% } %>
+          </tr>
+        </table>
                 <%# end meals list %>
       </section>
       <%# add to meal form below this comment %>

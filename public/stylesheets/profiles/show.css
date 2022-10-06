@@ -1,4 +1,5 @@
-html {
+
+#html {
   box-sizing: border-box;
 }
 
@@ -88,13 +89,4 @@ a{
   border-radius: 40%;
   box-shadow: 0;
   border: none;
-}
-
-.div-1 {
-display: flex;
-flex-wrap: wrap;
-}
-
-li {
-  list-style: none
 }
