@@ -1,66 +1,58 @@
-# MEN Stack with OAuth Template
-
-This is a MEN Stack template that includes OAuth.
-
-Use this to go build things! 🚀
-
-## To Use This Template
-
-__Replace `<name-of-your-app-here>` in the commands below with the name of your app!__
-
-```bash
-git clone https://github.com/SEI-Remote/men-stack-oauth-template.git <name-of-your-app-here>
-cd <name-of-your-app-here>
-```
-
-Once you are in the project directory:
-
-```bash
-rm -rf .git
-```
-
-Here's what your command line output should like after this step (note that the indicator that we are in a git repository is gone!)
-
-<img src="https://i.imgur.com/L47kNOZ.png" alt="The command line before and after running the rm -rf .git command. Before git:(main) is visible indiating that the directory contains a git repository, after the command it is not.">
-
-Re-initialize a git repository:
-
-```bash
-git init
-```
-
-Create a repo for this project on GitHub and add that remote to your project with `git remote add origin Your-repo-URL-here`.
-
-Run npm i to fetch the template's dependencies:
-
-```bash
-npm i
-```
-
-touch a .env file:
-
-```bash
-touch .env
-```
-
-Fill it with the following:
-
-```
-DATABASE_URL=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GOOGLE_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-SESSION_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-Replace the `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_SECRET`, and `SESSION_SECRET` with values that you provide.
-
-Delete this `README.md` file and finally, make an initial commit:
-
-```bash
-git add .
-git commit -m "initial commit"
-git push -u origin main
-```
-
-You're done!
 # migraine-tracker
+
+***
+
+##Migraine Tracker
+
+An app that gives you the ability to add migraines and triggers, so that you can track them over time and determine better ways to treat and prevent them.
+
+***
+
+##Instructions:
+* Login to the app via google login 
+* Click the 'Add Migraine' button to enter a migraine
+* Enter a Migraine Type, and select the date of your migraine, and click the submit button.
+* After submitting a migraine, you should be directed to the All Migraines page, where all of your migraines will be listed
+* From the All Migraines page, you can click the details link on a migraine to see all of the details of that migraine
+* Once in the Migraine Detail, you have the option to add triggers that have already been submitted from a drop down menu.  
+* To add a new trigger to the drop down, click the 'Add Trigger' button in the top right of the navigation bar
+* Enter the trigger name, and click the submit button.
+* The trigger will now appear in the drop down on the migraine detail view
+* Migraines can be deleted by clicking the 'X' button next to a specific migraine on the All Migraines view
+* Triggers can be deleted by clicking the 'X' button in the Migraine Detail view next to the specific trigger
+
+
+##Game Link:
+https://migrainetracker.fly.dev/
+
+***
+
+##Planning Materials:
+https://trello.com/b/5IjNm0K9/migraine-tracker
+
+***
+
+#Screenshot of game:
+
+*** 
+
+##Technologies used:
+* HTML, CSS, JavaScript, Git, Node, Express, MongoDB
+
+##Planned future enhancements:
+* Add the ability to group migraines by month, week, or year
+* Add the ability to add treatments that resolved migraines to an individual migraine
+* Add an icon to migraines that had successful treatments, to better flag them
+* Add the ability to group resolved migraines so that the user can track patterns
+* Use bootstrap to style the table on the 'Add Migraine' page to make it more streamlined
+* Use flexbox on the 'Add Migraine' and Add Trigger' views, to make their styling more consistent
+
+***
+
+##Thank You:
+Fredoka One font is from Google.fonts
+Brain image is from CLEANPNG:
+https://www.cleanpng.com/png-logo-clip-art-brain-vector-graphics-the-idea-monk-5986103/download-png.html
+Login
+Template
+
