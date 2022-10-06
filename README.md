@@ -31,6 +31,7 @@ https://trello.com/b/5IjNm0K9/migraine-tracker
 ***
 
 ## Screenshot of Migraine Tracker:
+![Screen Shot 2022-10-06 at 11 32 58 AM](https://user-images.githubusercontent.com/111081232/194356877-16e38831-d044-40b9-afbf-d10909010981.png)
 
 *** 
 
@@ -56,7 +57,7 @@ https://trello.com/b/5IjNm0K9/migraine-tracker
 ***
 
 ## Thank You:
-* Fredoka One font is from Google.fonts
+* Fredoka One font is from Google.fonts: https://fonts.google.com/about
 * Brain image is from CLEANPNG:
 https://www.cleanpng.com/png-logo-clip-art-brain-vector-graphics-the-idea-monk-5986103/download-png.html
 * Login
