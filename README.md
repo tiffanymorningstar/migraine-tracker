@@ -58,8 +58,7 @@ https://trello.com/b/5IjNm0K9/migraine-tracker
 ***
 
 ## Thank You:
-* Fredoka One font is from [Google.fonts] (https://fonts.google.com/about)
-* Brain image is from [CLEANPNG]
-(https://www.cleanpng.com/png-logo-clip-art-brain-vector-graphics-the-idea-monk-5986103/download-png.html)
+* Fredoka One font is from [Google.fonts](https://fonts.google.com/about).
+* Brain image is from [CLEANPNG](https://www.cleanpng.compng-logo-clip-art-brain-vector-graphics-the-idea-monk-5986103/download-png.html).
 
 
