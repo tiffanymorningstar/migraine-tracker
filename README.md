@@ -2,13 +2,13 @@
 
 ***
 
-##Migraine Tracker
+## Migraine Tracker
 
 An app that gives you the ability to add migraines and triggers, so that you can track them over time and determine better ways to treat and prevent them.
 
 ***
 
-##Instructions:
+## Instructions:
 * Login to the app via google login 
 * Click the 'Add Migraine' button to enter a migraine
 * Enter a Migraine Type, and select the date of your migraine, and click the submit button.
@@ -21,25 +21,28 @@ An app that gives you the ability to add migraines and triggers, so that you can
 * Migraines can be deleted by clicking the 'X' button next to a specific migraine on the All Migraines view
 * Triggers can be deleted by clicking the 'X' button in the Migraine Detail view next to the specific trigger
 
+***
 
-##Game Link:
+## Game Link:
 https://migrainetracker.fly.dev/
 
 ***
 
-##Planning Materials:
+## Planning Materials:
 https://trello.com/b/5IjNm0K9/migraine-tracker
 
 ***
 
-#Screenshot of game:
+## Screenshot of game:
 
 *** 
 
-##Technologies used:
+## Technologies used:
 * HTML, CSS, JavaScript, Git, Node, Express, MongoDB
 
-##Planned future enhancements:
+***
+
+## Planned future enhancements:
 * Add the ability to group migraines by month, week, or year
 * Add the ability to add treatments that resolved migraines to an individual migraine
 * Add an icon to migraines that had successful treatments, to better flag them
@@ -49,10 +52,10 @@ https://trello.com/b/5IjNm0K9/migraine-tracker
 
 ***
 
-##Thank You:
-Fredoka One font is from Google.fonts
-Brain image is from CLEANPNG:
+## Thank You:
+* Fredoka One font is from Google.fonts
+* Brain image is from CLEANPNG:
 https://www.cleanpng.com/png-logo-clip-art-brain-vector-graphics-the-idea-monk-5986103/download-png.html
-Login
-Template
+* Login
+* Template
 
