@@ -5,7 +5,8 @@
       <h1>
         <%= title %>
       </h1>
-      <p>Check existing triggers
+      <p>
+        <label id="drop-down-label" for="dropdown-input">Check existing triggers:</label>
         <select id="dropdown">
           <% triggers.forEach(function(trigger) { %>
             <option>
