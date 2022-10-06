@@ -8,13 +8,19 @@
       <div>
         <%= migraine.title %>
           <a href="/migraines/<%= migraine._id %>/edit">
-            <button>Edit Migraine</button>
+            <button id="edit">Edit Migraine</button>
           </a>
       </div>
       <section>
         <div>Date: </div>
         <div>
-          <%= migraine.date %>
+          <td id="detail-date">
+            <%=migraine.date.getMonth() +1 %>
+            /
+            <%=migraine.date.getDate() %>
+            /    
+            <%=migraine.date.getFullYear() %>
+          </td>
         </div>
         <div>Type: </div>
         <div>
@@ -28,7 +34,7 @@
               <li>
                 <%= trigger.name %>
                 <form action="/migraines/<%= migraine._id %>/triggers/<%= trigger._id %>?_method=PUT" method="POST">
-                  <button>X</button>
+                  <button id="trigger-delete">X</button>
                 </form>
               </li>
               <% }) %>
@@ -39,15 +45,15 @@
                 <%# end meals list %>
       </section>
       <%# add to meal form below this comment %>
-      <form id="add-to-triggers" action="/migraines/<%= migraine.id %>/triggers" method="POST">
-        <select name="triggerId">
+      <form action="/migraines/<%= migraine.id %>/triggers" method="POST">
+        <select id="drop-down" name="triggerId">
           <% triggers.forEach(trigger=> { %>
             <option value="<%= trigger._id %>">
               <%= trigger.name %>
             </option>
             <% }) %>
         </select>
-        <button type="submit">Add to Trigger</button>
+        <button id="add" type="submit">Add to Trigger</button>
       </form>
       </section>
         <% // new markup below %>

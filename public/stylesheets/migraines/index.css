@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: #3051f3;
-  color: #f6f6f6;
+  background-color: #4D8B31;
+  color: #FFC800;
   font-family: 'Fredoka One', cursive;
   margin: 0;
 }
@@ -34,7 +34,7 @@ main {
   flex-direction: column;
 }
 
-#bolt {
+/* #bolt {
   box-shadow: 0px 0px 5px #fff;
-}
+} */
 

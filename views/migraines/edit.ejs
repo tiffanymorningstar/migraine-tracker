@@ -6,11 +6,17 @@
         <%= title %>
       </h1>
       <form id="new-form" action="/migraines/<%= migraine._id %>?_method=PUT" method="POST">
+        
         <label for="date-input">Date:</label>
-        <input type="datetime-local" value="<%= migraine.date %>" name="date">
+
+        <input id="date-selector" type="datetime-local" value="<%= migraine.date %>" name="date">
+
         <label for="migraine-type-input">Type</label>
+
         <input type="text" name="type" value="<%= migraine.type %>" id="migraine-type-input">
-        <button type="submit">Update Migraine</button>
+
+        <button id="update-migraine" type="update-button">Update Migraine</button>
+
       </form>
     </main>
     <%- include("../partials/footer") %>
