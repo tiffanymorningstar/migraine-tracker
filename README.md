@@ -28,8 +28,10 @@ An app that gives you the ability to add migraines and triggers, so that you can
 
 ***
 
-## Screenshot of Migraine Tracker:
+## Screenshots of Migraine Tracker:
 ![Screen Shot 2022-10-06 at 11 32 58 AM](https://user-images.githubusercontent.com/111081232/194356877-16e38831-d044-40b9-afbf-d10909010981.png)
+
+![Screen Shot 2022-10-07 at 10 06 41 AM](https://user-images.githubusercontent.com/111081232/194572847-115c44fe-53f1-4573-858b-e92cc270e3f6.png)
 
 *** 
 
